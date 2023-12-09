@@ -1,4 +1,15 @@
 .box {
-  box-shadow: 0px 0px 20.4px 0px rgba(5, 130, 202, 0.25);
+  box-shadow: 0px 0px 20px 0px #0582ca;
   border-radius: 20px;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.box:hover {
+  box-shadow: 0px 0px 20px 10px #0582ca;
+  cursor: pointer;
+}
+
+.box:hover::after {
+  box-shadow: 0px 0px 20px 0px #0582ca;
+  transition: box-shadow 0.4s ease-in-out;
 }
